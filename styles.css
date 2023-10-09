@@ -6,7 +6,7 @@ body {
     background-color:#4f67a2;
 }
 
-/* transparent navbar on left */
+/* transparent navbar on right */
 .navbar-custom {
     background-color: rgba(0,0,0,0);
     position: fixed;
@@ -55,15 +55,15 @@ body {
     margin-top: 10px;
     margin-left: 150px;
     color: #323232;
-    animation: slideFromRight 2s ease forwards;
+    animation: slideFromBottom 2s ease forwards;
 }
 /* text animations for homepage */
-@keyframes slideFromRight {
+@keyframes slideFromBottom {
     from {
-        transform: translateX(100%);
+        transform: translateY(500%);
     }
     to {
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 @keyframes slideFromLeft {
