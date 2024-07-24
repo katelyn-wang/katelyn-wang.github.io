@@ -7,7 +7,7 @@ body {
 }
 
 /* transparent navbar on right */
-.navbar-custom {
+#navbar-custom {
     background-color: rgba(0,0,0,0);
     position: fixed;
     padding-top: 3%;
@@ -23,7 +23,7 @@ body {
     text-shadow: 1px  1px 0 #cadcf9;
     padding-left:1.5%;
 }
-.navbar-custom a:hover {
+#navbar-custom a:hover {
     text-decoration: none;
     color: #555;
     font-weight: 700;
@@ -34,6 +34,27 @@ body {
     place-items: center;
     height: 100vh;
     background: linear-gradient(to bottom, #cadcf9, #4f67a2);
+}
+
+#downArrow {
+    position: fixed;
+    z-index: 1000;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3em;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .name-text {
